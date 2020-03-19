@@ -1,0 +1,200 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    color: hsl(0, 6%, 24%);
+    font-size: 15px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    background-color: hsl(0, 100%, 98%);
+}
+
+.logo {
+    float: left;
+    margin: 30px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.mobile-img {
+    width: 100%;
+    display: block;
+}
+
+.desktop-img {
+    display: none;
+}
+
+.block-content {
+    margin: 55px auto;
+    width: 100%;
+    max-width: 600px;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: 10px;
+    margin: 0px;
+}
+
+.block-content-body {
+    color: hsl(0, 36%, 70%);
+    font-weight: 400;
+    padding: 0px 25px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.desaturated-red {
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+}
+
+form {
+    padding: 0 25px;
+    max-width: 430px;
+    margin: auto;
+}
+
+.input-form {
+    padding-left: 25px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to right, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    border: 1px solid;
+    border-radius: 25px;
+    border-color: hsl(0, 35%, 87%);
+    height: 40px;
+    background: hsl(0, 100%, 98%);
+    background-clip: border-box;
+}
+
+.email {
+    width: 100%;
+    border: none;
+    background-color: hsl(0, 100%, 98%);
+}
+
+::placeholder {
+    font-family: 'Josefin Sans', sans-serif;
+    color: hsl(0, 35%, 87%);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: hsl(0, 44%, 91%);
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: hsl(0, 44%, 91%);
+}
+
+.submit-btn {
+    background-image: linear-gradient(to right, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    border: none;
+    border-radius: 25px;
+    padding: 10px 22px;
+    margin: -2px -4px;
+    box-shadow: 0px 10px 15px hsl(0, 100%, 93%);
+}
+
+.submit-btn:hover {
+    background-image: linear-gradient(to right, hsl(0, 100%, 90%), hsl(0, 90%, 88%));
+}
+
+.error-text {
+    text-align: left;
+    padding-left: 18%;
+    color: hsl(0, 93%, 68%);
+}
+
+.error-form {
+    color: hsl(0, 93%, 68%);
+    border-color: hsl(0, 93%, 68%);
+    border: 2px solid;
+}
+
+.error-icon {
+    padding: 8px;
+}
+
+@media only screen and (min-width: 1025px) {
+    body {
+        text-align: left;
+        background-image: url("images/bg-pattern-desktop.svg");
+        height: 100%;
+        width: 50%;
+        background-size: cover;
+    }
+    .logo {
+        width: 30%;
+        margin: 50px 0 100px 150px;
+    }
+    .logo img {
+        width: 158px;
+    }
+    .mobile-img {
+        display: none;
+    }
+    .block-img {
+        background-image: url("images/hero-desktop.jpg");
+        position: fixed;
+        right: 0;
+        height: 100%;
+        width: 45%;
+        background-size: cover;
+    }
+    .block-content {
+        margin: 0 0 auto 150px;
+        width: 57%;
+    }
+    h1 {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 60px;
+        letter-spacing: 18px;
+        line-height: 110%;
+    }
+    .block-content-body {
+        padding: 0;
+        max-width: 450px;
+        margin: 30px 0 50px;
+    }
+    form {
+        padding: 0;
+        margin: 0;
+    }
+    .input-form {
+        height: 50px;
+    }
+    ::placeholder {
+        font-family: 'Josefin Sans', sans-serif;
+        color: hsl(0, 35%, 87%);
+        font-weight: 400;
+        font-size: 16px;
+    }
+    :-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: hsl(0, 35%, 87%);
+    }
+    ::-ms-input-placeholder {
+        /* Microsoft Edge */
+        color: hsl(0, 35%, 87%);
+    }
+    .submit-btn {
+        padding: 10px 40px;
+    }
+    .error-text{
+        padding-left: 30px;
+    }
+    .error-icon {
+        padding: 13px;
+    }
+}
