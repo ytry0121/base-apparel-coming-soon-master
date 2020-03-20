@@ -1,11 +1,11 @@
 body {
-    font-family: 'Josefin Sans', sans-serif;
+    background-color: hsl(0, 100%, 98%);
     color: hsl(0, 6%, 24%);
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 15px;
-    text-align: center;
     margin: 0px;
     padding: 0px;
-    background-color: hsl(0, 100%, 98%);
+    text-align: center;
 }
 
 .logo {
@@ -18,34 +18,30 @@ body {
 }
 
 .mobile-img {
-    width: 100%;
     display: block;
-}
-
-.desktop-img {
-    display: none;
+    width: 100%;
 }
 
 .block-content {
     margin: 55px auto;
-    width: 100%;
     max-width: 600px;
+    width: 100%;
 }
 
 h1 {
-    text-transform: uppercase;
     font-weight: 600;
     font-size: 40px;
-    letter-spacing: 10px;
     margin: 0px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
 }
 
 .block-content-body {
     color: hsl(0, 36%, 70%);
     font-weight: 400;
-    padding: 0px 25px;
     line-height: 1.6;
     margin-bottom: 30px;
+    padding: 0px 25px;
 }
 
 .desaturated-red {
@@ -54,55 +50,45 @@ h1 {
 }
 
 form {
-    padding: 0 25px;
-    max-width: 430px;
     margin: auto;
+    max-width: 430px;
+    padding: 0 25px;
 }
 
 .input-form {
-    padding-left: 25px;
-    width: 90%;
-    display: flex;
-    justify-content: center;
+    background: hsl(0, 100%, 98%);
+    background-clip: border-box;
     background-image: linear-gradient(to right, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
     border: 1px solid;
     border-radius: 25px;
     border-color: hsl(0, 35%, 87%);
+    display: flex;
     height: 40px;
-    background: hsl(0, 100%, 98%);
-    background-clip: border-box;
+    justify-content: center;
+    padding-left: 25px;
+    width: 90%;
 }
 
 .email {
-    width: 100%;
-    border: none;
     background-color: hsl(0, 100%, 98%);
+    border: none;
+    width: 100%;
 }
 
 ::placeholder {
-    font-family: 'Josefin Sans', sans-serif;
     color: hsl(0, 35%, 87%);
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
     font-size: 14px;
-}
-
-:-ms-input-placeholder {
-    /* Internet Explorer 10-11 */
-    color: hsl(0, 44%, 91%);
-}
-
-::-ms-input-placeholder {
-    /* Microsoft Edge */
-    color: hsl(0, 44%, 91%);
 }
 
 .submit-btn {
     background-image: linear-gradient(to right, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
     border: none;
     border-radius: 25px;
-    padding: 10px 22px;
-    margin: -2px -4px;
     box-shadow: 0px 10px 15px hsl(0, 100%, 93%);
+    margin: -2px -4px;
+    padding: 10px 22px;
 }
 
 .submit-btn:hover {
@@ -110,32 +96,33 @@ form {
 }
 
 .error-text {
-    text-align: left;
-    padding-left: 18%;
     color: hsl(0, 93%, 68%);
+    padding-left: 18%;
+    text-align: left;
 }
 
 .error-form {
-    color: hsl(0, 93%, 68%);
-    border-color: hsl(0, 93%, 68%);
     border: 2px solid;
+    border-color: hsl(0, 93%, 68%);
+    color: hsl(0, 93%, 68%);
 }
 
 .error-icon {
+    display: none;
     padding: 8px;
 }
 
 @media only screen and (min-width: 1025px) {
     body {
-        text-align: left;
         background-image: url("images/bg-pattern-desktop.svg");
+        background-size: 100%;
         height: 100%;
+        text-align: left;
         width: 50%;
-        background-size: cover;
     }
     .logo {
+        margin: 80px 0 100px 180px;
         width: 30%;
-        margin: 50px 0 100px 150px;
     }
     .logo img {
         width: 158px;
@@ -145,53 +132,40 @@ form {
     }
     .block-img {
         background-image: url("images/hero-desktop.jpg");
+        background-size: cover;
+        height: 100%;
         position: fixed;
         right: 0;
-        height: 100%;
-        width: 45%;
-        background-size: cover;
+        width: 40%;
     }
     .block-content {
-        margin: 0 0 auto 150px;
+        margin: 0 0 auto 180px;
         width: 57%;
     }
     h1 {
-        text-transform: uppercase;
-        font-weight: 600;
         font-size: 60px;
         letter-spacing: 18px;
         line-height: 110%;
     }
     .block-content-body {
-        padding: 0;
         max-width: 450px;
         margin: 30px 0 50px;
+        padding: 0;
     }
     form {
-        padding: 0;
         margin: 0;
+        padding: 0;
     }
     .input-form {
         height: 50px;
     }
     ::placeholder {
-        font-family: 'Josefin Sans', sans-serif;
-        color: hsl(0, 35%, 87%);
-        font-weight: 400;
         font-size: 16px;
-    }
-    :-ms-input-placeholder {
-        /* Internet Explorer 10-11 */
-        color: hsl(0, 35%, 87%);
-    }
-    ::-ms-input-placeholder {
-        /* Microsoft Edge */
-        color: hsl(0, 35%, 87%);
     }
     .submit-btn {
         padding: 10px 40px;
     }
-    .error-text{
+    .error-text {
         padding-left: 30px;
     }
     .error-icon {
