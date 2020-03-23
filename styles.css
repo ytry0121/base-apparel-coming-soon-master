@@ -71,6 +71,7 @@ form {
     background-color: hsl(0, 100%, 98%);
     border: none;
     width: 100%;
+    height: 98%
 }
 
 ::placeholder {
