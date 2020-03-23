@@ -26,14 +26,14 @@
       <p class="block-content-body">Hello fellow shoppers! We're currently building our new fashion store.
         Add your email below to stay up-to-date with announcements and our launch deals.</p>
       <form>
-        <label for="email">
           <div class="input-form" id="input-form">
-            <input class="email" type="email" id="email" name="email" placeholder="Email Address">
-          <div class="error-icon" id="error-icon"><img src="images/icon-error.svg" alt="error-icon"></div>
+            <label for="email">
+              <input class="email" type="email" id="email" name="email" placeholder="Email Address">
+            </label>
+            <div class="error-icon" id="error-icon"><img src="images/icon-error.svg" alt="error-icon"></div>
           <button type="submit" class="submit-btn" onclick="errorCheck()"><img src="images/icon-arrow.svg"
               alt="arrow-icon"></button>
         </div>
-      </label>
     </form>
       <p id="error-msg"></p>
     </div>
